@@ -59,10 +59,10 @@ function ConnToIp(conn) {
     if (typeof conn === 'string' && /^[0-9a-fA-F]+$/.test(conn)) {
         //@ts-ignore
         const ipAddress = conn.match(/.{1,2}/g).map((h) => String.fromCharCode(parseInt(h, 16))).join('');
-        console.log(ipAddress);
+        return ipAddress;
     }
     else {
-        console.error('conn não é uma string válida contendo valores hexadecimais.');
+        return "";
     }
 }
 exports.ConnToIp = ConnToIp;
