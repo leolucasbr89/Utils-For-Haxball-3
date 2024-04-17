@@ -16,15 +16,27 @@ class Referee extends father_js_1.FatherClass {
     constructor(publicRoom) {
         super(publicRoom);
     }
-    SendMessage(message, id) {
+    SendMessage(message, idiom, id) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.publicRoom.sendAnnouncement(`Referee: ${message}`, id, index_js_1.hexadecimalColors.yellow, index_js_1.WritingStyles.bold);
+            let referename = undefined;
+            if (idiom === "en") {
+                referename = "Referee";
+            }
+            else if (idiom === "pt") {
+                referename = "Juiz";
+            }
+            else if (idiom === "es") {
+                referename = "Árbitro";
+            }
+            yield this.publicRoom.sendAnnouncement(`${referename}: ${message}`, id, index_js_1.hexadecimalColors.yellow, index_js_1.WritingStyles.bold);
         });
     }
     PauseGame(askedforabreak, idiom) {
         return __awaiter(this, void 0, void 0, function* () {
             let message = askedforabreak ? this.ChoosePauseMessage(idiom, askedforabreak.id, askedforabreak.name) : undefined;
-            yield this.SendMessage(`PÍÍÍÍÍ, ${message}`);
+            if (message) {
+                yield this.SendMessage(`PÍÍÍÍÍ, ${message}`, idiom);
+            }
         });
     }
     SendMessageWhenStopGame() {
@@ -39,10 +51,9 @@ class Referee extends father_js_1.FatherClass {
         else if (idiom === "en") {
             return `Game paused by #${id} ${name}`;
         }
-        else if (idiom === "es") {
+        else {
             return `Juego pausado por #${id} ${name}`;
         }
-        return undefined;
     }
 }
 exports.Referee = Referee;

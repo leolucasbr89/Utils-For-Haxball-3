@@ -6,27 +6,37 @@ export class Referee extends FatherClass {
         super(publicRoom)
     }
 
-    async SendMessage(message: string, id?: number) {
-        await this.publicRoom.sendAnnouncement(`Referee: ${message}`, id, hexadecimalColors.yellow, WritingStyles.bold)
+    async SendMessage(message: string, idiom?: idioms,id?: number) {
+        let referename: string|undefined = undefined
+        if (idiom === "en") {
+            referename = "Referee"
+        } else if (idiom === "pt") {
+            referename = "Juiz"
+        } else if (idiom === "es") {
+            referename = "Árbitro"
+        }
+
+
+        await this.publicRoom.sendAnnouncement(`${referename}: ${message}`, id, hexadecimalColors.yellow, WritingStyles.bold)
     }
 
     async PauseGame(askedforabreak: PlayerObject|undefined, idiom: idioms) {
         let message: string|undefined = askedforabreak ? this.ChoosePauseMessage(idiom, askedforabreak.id, askedforabreak.name) : undefined
         
-        
-        await this.SendMessage(`PÍÍÍÍÍ, ${message}`)
+        if (message) {
+            await this.SendMessage(`PÍÍÍÍÍ, ${message}`, idiom)
+        }
     }
     async SendMessageWhenStopGame() {
         await this.SendMessage("PÍÍÍÍÍÍÍÍÍÍÍÍ")
     }
-    private ChoosePauseMessage(idiom: idioms, id: number, name: string): string|undefined {
+    private ChoosePauseMessage(idiom: idioms, id: number, name: string): string{
         if (idiom === "pt") {
             return `Jogo pausado por #${id} ${name}`
         } else if (idiom === "en") {
             return `Game paused by #${id} ${name}`
-        } else if (idiom === "es") {
+        } else {
             return `Juego pausado por #${id} ${name}`
         } 
-        return undefined
     }
 }
