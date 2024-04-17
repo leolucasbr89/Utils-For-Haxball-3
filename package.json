@@ -1,9 +1,9 @@
 {
-  "name": "utils-haxball.js",
+  "name": "utils-haxball.js-52",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
-  "types": "",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

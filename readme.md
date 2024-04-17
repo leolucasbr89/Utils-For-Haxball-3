@@ -1,0 +1,1 @@
+I made this lib for personal use, so forgive me I won't describe how to use it lol
