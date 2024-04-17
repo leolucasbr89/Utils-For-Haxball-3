@@ -38,7 +38,13 @@ export enum WritingStyles {
 }
 
 export function ConnToIp(conn: string) {
-    return conn.match(/.{1,2}/g)?.map((h: string) => {String.fromCharCode(parseInt(h, 16))}).join('')
+    if (typeof conn === 'string' && /^[0-9a-fA-F]+$/.test(conn)) {
+        //@ts-ignore
+        const ipAddress = conn.match(/.{1,2}/g).map((h) => String.fromCharCode(parseInt(h, 16))).join('');
+        console.log(ipAddress);
+    } else {
+        console.error('conn não é uma string válida contendo valores hexadecimais.');
+    }    
 }
 
 

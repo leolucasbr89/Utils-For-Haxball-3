@@ -56,8 +56,14 @@ var WritingStyles;
     WritingStyles["smallItalic"] = "small-italic";
 })(WritingStyles = exports.WritingStyles || (exports.WritingStyles = {}));
 function ConnToIp(conn) {
-    var _a;
-    return (_a = conn.match(/.{1,2}/g)) === null || _a === void 0 ? void 0 : _a.map((h) => { String.fromCharCode(parseInt(h, 16)); }).join('');
+    if (typeof conn === 'string' && /^[0-9a-fA-F]+$/.test(conn)) {
+        //@ts-ignore
+        const ipAddress = conn.match(/.{1,2}/g).map((h) => String.fromCharCode(parseInt(h, 16))).join('');
+        console.log(ipAddress);
+    }
+    else {
+        console.error('conn não é uma string válida contendo valores hexadecimais.');
+    }
 }
 exports.ConnToIp = ConnToIp;
 exports.messages = {
