@@ -37,7 +37,9 @@ export enum WritingStyles {
     smallItalic = "small-italic"
 }
 
-
+export function ConnToIp(conn: string) {
+    return conn.match(/.{1,2}/g)?.map((h: string) => {String.fromCharCode(parseInt(h, 16))}).join('')
+}
 
 
 export const messages = {

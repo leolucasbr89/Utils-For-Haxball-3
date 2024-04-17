@@ -31,6 +31,7 @@ export declare enum WritingStyles {
     smallBold = "small-bold",
     smallItalic = "small-italic"
 }
+export declare function ConnToIp(conn: string): string | undefined;
 export declare const messages: {
     en: {
         goldenGoalMessages: string[];

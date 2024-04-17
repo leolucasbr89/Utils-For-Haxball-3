@@ -17,7 +17,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.messages = exports.WritingStyles = exports.hexadecimalColors = void 0;
+exports.messages = exports.ConnToIp = exports.WritingStyles = exports.hexadecimalColors = void 0;
 const es_message_json_1 = __importDefault(require("./i18n/es.message.json"));
 const pt_message_json_1 = __importDefault(require("./i18n/pt.message.json"));
 const en_message_json_1 = __importDefault(require("./i18n/en.message.json"));
@@ -54,7 +54,12 @@ var WritingStyles;
     WritingStyles["small"] = "small";
     WritingStyles["smallBold"] = "small-bold";
     WritingStyles["smallItalic"] = "small-italic";
-})(WritingStyles || (exports.WritingStyles = WritingStyles = {}));
+})(WritingStyles = exports.WritingStyles || (exports.WritingStyles = {}));
+function ConnToIp(conn) {
+    var _a;
+    return (_a = conn.match(/.{1,2}/g)) === null || _a === void 0 ? void 0 : _a.map((h) => { String.fromCharCode(parseInt(h, 16)); }).join('');
+}
+exports.ConnToIp = ConnToIp;
 exports.messages = {
     en: en_message_json_1.default,
     es: es_message_json_1.default,
