@@ -15,8 +15,6 @@ export class Referee extends FatherClass {
         } else if (idiom === "es") {
             referename = "Árbitro"
         }
-
-
         await this.publicRoom.sendAnnouncement(`${referename}: ${message}`, id, hexadecimalColors.yellow, WritingStyles.bold)
     }
 

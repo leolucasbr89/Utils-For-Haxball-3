@@ -8,23 +8,25 @@ export class Storyteller extends FatherClass {
     private GoalMessages: string[] = []
     private OwnGoalMessages: string[] = []
     private GoldenGoalMessages: string[] = []
-    private indice: number = 0
+    private indice: number = 0 
+    idiom: idioms
     constructor(publicRoom: RoomObject, idiom: idioms) {
         super(publicRoom)
-        this.ChooseIdiom(idiom)
+        this.idiom = idiom
+        this.ChooseIdiom()
     }
-    ChooseIdiom(idiom: idioms) {
-        if (idiom == "en") {
+    private ChooseIdiom() {
+        if (this.idiom == "en") {
             let messagesEn = messages.en
             this.OwnGoalMessages = messagesEn.ownGoalMessages
             this.GoldenGoalMessages = messagesEn.goldenGoalMessages
             this.GoalMessages = messagesEn.goalMessages
-        } else if (idiom == "es") {
+        } else if (this.idiom == "es") {
             let messagesEs = messages.es
             this.OwnGoalMessages = messagesEs.mensajesAutogol
             this.GoldenGoalMessages = messagesEs.mensajesGolDorado
             this.GoalMessages = messagesEs.mensajesGol
-        } else if (idiom == "pt") {
+        } else if (this.idiom == "pt") {
             let messagesPT = messages.pt
             this.OwnGoalMessages = messagesPT.mensagensAutogol
             this.GoldenGoalMessages = messagesPT.mensagensGolDourado
@@ -32,7 +34,8 @@ export class Storyteller extends FatherClass {
         }
     }
     async SendMessage(message: string, id?: number) {
-        await this.publicRoom.sendAnnouncement(`🎤Story Teller: ${message}`, id, hexadecimalColors.turquoise, WritingStyles.bold)
+        let name = this.ChooseName()
+        await this.publicRoom.sendAnnouncement(`🎤${name}: ${message}`, id, hexadecimalColors.turquoise, WritingStyles.bold)
     }
     async SendMessageGoal(owngoal: boolean) {
         if (!owngoal) {
@@ -46,5 +49,15 @@ export class Storyteller extends FatherClass {
     async SendGoldenGoalMessage() {
         this.indice = MathEntity.generateIntegerBetweenMinAndMax(0, this.GoldenGoalMessages.length - 1)
         await this.SendMessage(this.GoldenGoalMessages[this.indice])
+    }
+    private ChooseName(): string {
+        if (this.idiom === "pt") {
+            return "Narrador"
+        } else if (this.idiom === "es") {
+            return "Narrator"
+        } else if (this.idiom === "en") {
+            return "Story Teller"
+        }
+        return ""
     }
 }
