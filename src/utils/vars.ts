@@ -2,12 +2,16 @@ import x3futsal from "../../maps/x3-futsal.json"
 import espanoljson from "../../i18n/es.message.json"
 import ptjson from "../../i18n/pt.message.json"
 import enjson from "../../i18n/en.message.json"
-
-
+import x4futsal from "../../maps/x4-futsal.json"
+import x7futsal from "../../maps/x7-futsal.json"
+import x1andx2futsal from "../../maps/x1-and-x2futsal.json"
 
 
 export const maps = {
-    x3futsal
+    x3futsal,
+    x4futsal,
+    x7futsal,
+    x1andx2futsal
 }
 
 export const messages = {
