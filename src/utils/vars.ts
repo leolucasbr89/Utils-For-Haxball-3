@@ -1,10 +1,14 @@
-import espanoljson from "../i18n/es.message.json"
-import ptjson from "../i18n/pt.message.json"
-import enjson from "../i18n/en.message.json"
+import x3futsal from "../../maps/x3-futsal.json"
+import espanoljson from "../../i18n/es.message.json"
+import ptjson from "../../i18n/pt.message.json"
+import enjson from "../../i18n/en.message.json"
 
 
 
 
+export const maps = {
+    x3futsal
+}
 
 export const messages = {
     en: enjson,

@@ -3,10 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WritingStyles = exports.hexadecimalColors = exports.messages = void 0;
-const es_message_json_1 = __importDefault(require("../i18n/es.message.json"));
-const pt_message_json_1 = __importDefault(require("../i18n/pt.message.json"));
-const en_message_json_1 = __importDefault(require("../i18n/en.message.json"));
+exports.WritingStyles = exports.hexadecimalColors = exports.messages = exports.maps = void 0;
+const x3_futsal_json_1 = __importDefault(require("../../maps/x3-futsal.json"));
+const es_message_json_1 = __importDefault(require("../../i18n/es.message.json"));
+const pt_message_json_1 = __importDefault(require("../../i18n/pt.message.json"));
+const en_message_json_1 = __importDefault(require("../../i18n/en.message.json"));
+exports.maps = {
+    x3futsal: x3_futsal_json_1.default
+};
 exports.messages = {
     en: en_message_json_1.default,
     es: es_message_json_1.default,

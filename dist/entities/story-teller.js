@@ -20,22 +20,23 @@ class Storyteller extends father_js_1.FatherClass {
         this.OwnGoalMessages = [];
         this.GoldenGoalMessages = [];
         this.indice = 0;
-        this.ChooseIdiom(idiom);
+        this.idiom = idiom;
+        this.ChooseIdiom();
     }
-    ChooseIdiom(idiom) {
-        if (idiom == "en") {
+    ChooseIdiom() {
+        if (this.idiom == "en") {
             let messagesEn = index_js_1.messages.en;
             this.OwnGoalMessages = messagesEn.ownGoalMessages;
             this.GoldenGoalMessages = messagesEn.goldenGoalMessages;
             this.GoalMessages = messagesEn.goalMessages;
         }
-        else if (idiom == "es") {
+        else if (this.idiom == "es") {
             let messagesEs = index_js_1.messages.es;
             this.OwnGoalMessages = messagesEs.mensajesAutogol;
             this.GoldenGoalMessages = messagesEs.mensajesGolDorado;
             this.GoalMessages = messagesEs.mensajesGol;
         }
-        else if (idiom == "pt") {
+        else if (this.idiom == "pt") {
             let messagesPT = index_js_1.messages.pt;
             this.OwnGoalMessages = messagesPT.mensagensAutogol;
             this.GoldenGoalMessages = messagesPT.mensagensGolDourado;
@@ -44,7 +45,8 @@ class Storyteller extends father_js_1.FatherClass {
     }
     SendMessage(message, id) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.publicRoom.sendAnnouncement(`🎤Story Teller: ${message}`, id, index_js_1.hexadecimalColors.turquoise, index_js_1.WritingStyles.bold);
+            let name = this.ChooseName();
+            yield this.publicRoom.sendAnnouncement(`🎤${name}: ${message}`, id, index_js_1.hexadecimalColors.turquoise, index_js_1.WritingStyles.bold);
         });
     }
     SendMessageGoal(owngoal) {
@@ -64,6 +66,18 @@ class Storyteller extends father_js_1.FatherClass {
             this.indice = math_entity_js_1.MathEntity.generateIntegerBetweenMinAndMax(0, this.GoldenGoalMessages.length - 1);
             yield this.SendMessage(this.GoldenGoalMessages[this.indice]);
         });
+    }
+    ChooseName() {
+        if (this.idiom === "pt") {
+            return "Narrador";
+        }
+        else if (this.idiom === "es") {
+            return "Narrator";
+        }
+        else if (this.idiom === "en") {
+            return "Story Teller";
+        }
+        return "";
     }
 }
 exports.Storyteller = Storyteller;

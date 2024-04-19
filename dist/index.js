@@ -17,8 +17,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./types/types.js"), exports);
 __exportStar(require("./entities/father.js"), exports);
 __exportStar(require("./entities/referee.js"), exports);
-__exportStar(require("./entities/story-teller"), exports);
-__exportStar(require("./entities/math.entity"), exports);
+__exportStar(require("./entities/story-teller.js"), exports);
+__exportStar(require("./entities/math.entity.js"), exports);
 __exportStar(require("./utils/functions.js"), exports);
 __exportStar(require("./utils/vars.js"), exports);
 //# sourceMappingURL=index.js.map

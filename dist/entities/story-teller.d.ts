@@ -6,9 +6,11 @@ export declare class Storyteller extends FatherClass {
     private OwnGoalMessages;
     private GoldenGoalMessages;
     private indice;
+    idiom: idioms;
     constructor(publicRoom: RoomObject, idiom: idioms);
-    ChooseIdiom(idiom: idioms): void;
+    private ChooseIdiom;
     SendMessage(message: string, id?: number): Promise<void>;
     SendMessageGoal(owngoal: boolean): Promise<void>;
     SendGoldenGoalMessage(): Promise<void>;
+    private ChooseName;
 }
