@@ -21,4 +21,5 @@ __exportStar(require("./entities/story-teller.js"), exports);
 __exportStar(require("./entities/math.entity.js"), exports);
 __exportStar(require("./utils/functions.js"), exports);
 __exportStar(require("./utils/vars.js"), exports);
+__exportStar(require("./entities/disc.js"), exports);
 //# sourceMappingURL=index.js.map

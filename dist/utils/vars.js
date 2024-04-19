@@ -8,8 +8,14 @@ const x3_futsal_json_1 = __importDefault(require("../../maps/x3-futsal.json"));
 const es_message_json_1 = __importDefault(require("../../i18n/es.message.json"));
 const pt_message_json_1 = __importDefault(require("../../i18n/pt.message.json"));
 const en_message_json_1 = __importDefault(require("../../i18n/en.message.json"));
+const x4_futsal_json_1 = __importDefault(require("../../maps/x4-futsal.json"));
+const x7_futsal_json_1 = __importDefault(require("../../maps/x7-futsal.json"));
+const x1_and_x2futsal_json_1 = __importDefault(require("../../maps/x1-and-x2futsal.json"));
 exports.maps = {
-    x3futsal: x3_futsal_json_1.default
+    x3futsal: x3_futsal_json_1.default,
+    x4futsal: x4_futsal_json_1.default,
+    x7futsal: x7_futsal_json_1.default,
+    x1andx2futsal: x1_and_x2futsal_json_1.default
 };
 exports.messages = {
     en: en_message_json_1.default,
