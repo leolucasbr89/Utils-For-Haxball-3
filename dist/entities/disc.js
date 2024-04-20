@@ -12,13 +12,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Disc = void 0;
 const father_js_1 = require("./father.js");
 class Disc extends father_js_1.FatherClass {
-    constructor(publicRoom, id) {
+    constructor(publicRoom, id, position) {
         super(publicRoom);
         this.id = id;
+        this.position = position;
     }
     //this metod is util for real soccer
     ChangeBallPosition(x, cmask, y) {
         return __awaiter(this, void 0, void 0, function* () {
+            this.position.x = x;
+            if (y) {
+                this.position.y = y;
+            }
             yield this.publicRoom.setDiscProperties(this.id, { x: x, y: y, cMask: cmask });
         });
     }
