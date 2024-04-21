@@ -9,4 +9,10 @@ export class MathEntity {
         let d2 = p1.y - p2.y
         return Math.sqrt(d1 * d1 + d2 * d2)
     }
+    static averageSpeed(firstMoment: number, lastMoment: number, firstPosition: Position, lastPosition: Position,
+        differenceTime = lastMoment - firstMoment
+    ) {
+        const differenceSpace: number = this.pointDistance(firstPosition, lastPosition)
+        return differenceSpace / differenceTime
+    }
 }
