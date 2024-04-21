@@ -12,7 +12,7 @@ class MathEntity {
     }
     static averageSpeed(firstMoment, lastMoment, firstPosition, lastPosition, differenceTime = lastMoment - firstMoment) {
         const differenceSpace = this.pointDistance(firstPosition, lastPosition);
-        return differenceSpace / differenceTime;
+        return (differenceSpace / differenceTime) / 10;
     }
 }
 exports.MathEntity = MathEntity;

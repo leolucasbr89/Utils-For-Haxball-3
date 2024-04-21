@@ -13,6 +13,6 @@ export class MathEntity {
         differenceTime = lastMoment - firstMoment
     ) {
         const differenceSpace: number = this.pointDistance(firstPosition, lastPosition)
-        return differenceSpace / differenceTime
+        return (differenceSpace / differenceTime) / 10
     }
 }
