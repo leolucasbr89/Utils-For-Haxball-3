@@ -10,6 +10,10 @@ class MathEntity {
         let d2 = p1.y - p2.y;
         return Math.sqrt(d1 * d1 + d2 * d2);
     }
+    static averageSpeed(firstMoment, lastMoment, firstPosition, lastPosition, differenceTime = lastMoment - firstMoment) {
+        const differenceSpace = this.pointDistance(firstPosition, lastPosition);
+        return differenceSpace / differenceTime;
+    }
 }
 exports.MathEntity = MathEntity;
 //# sourceMappingURL=math.entity.js.map
