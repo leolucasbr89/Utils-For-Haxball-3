@@ -17,5 +17,5 @@
         "rootDir": "src"
     },
     "include": ["src/**/*"],
-    "exclude": ["./maps/**/*", "./i18n/**/*", "./dist/**/*"]
+    "exclude": ["./maps/**/*", "./i18n/**/*", "./dist/**/*", "./unis/**/*"]
 }
