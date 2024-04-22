@@ -2057,13 +2057,13 @@ export declare enum WritingStyles {
 }
 export declare const shirts: {
     unisBrazilian: {
-        nome: string;
-        frasesDeTorcida: string[];
-        uniforme: {
+        name: string;
+        cheerphrases: string[];
+        shirt: {
             angle: number;
             textColor: number;
             colors: number[];
         };
-        cor: number;
+        color: number;
     }[];
 };
