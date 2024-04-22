@@ -41,7 +41,7 @@ export class Storyteller extends FatherClass {
         if (!owngoal) {
             this.indice = MathEntity.generateIntegerBetweenMinAndMax(0, this.GoalMessages.length - 1)
             await this.SendMessage(this.GoalMessages[this.indice])
-        } else {
+        } else if (owngoal) {
             this.indice = MathEntity.generateIntegerBetweenMinAndMax(0, this.OwnGoalMessages.length - 1)
             await this.SendMessage(this.OwnGoalMessages[this.indice])
         }

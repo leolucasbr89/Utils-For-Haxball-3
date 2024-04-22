@@ -55,7 +55,7 @@ class Storyteller extends father_js_1.FatherClass {
                 this.indice = math_entity_js_1.MathEntity.generateIntegerBetweenMinAndMax(0, this.GoalMessages.length - 1);
                 yield this.SendMessage(this.GoalMessages[this.indice]);
             }
-            else {
+            else if (owngoal) {
                 this.indice = math_entity_js_1.MathEntity.generateIntegerBetweenMinAndMax(0, this.OwnGoalMessages.length - 1);
                 yield this.SendMessage(this.OwnGoalMessages[this.indice]);
             }
