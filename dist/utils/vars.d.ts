@@ -2055,3 +2055,15 @@ export declare enum WritingStyles {
     smallBold = "small-bold",
     smallItalic = "small-italic"
 }
+export declare const shirts: {
+    unisBrazilian: {
+        nome: string;
+        frasesDeTorcida: string[];
+        uniforme: {
+            angle: number;
+            textColor: number;
+            colors: number[];
+        };
+        cor: number;
+    }[];
+};

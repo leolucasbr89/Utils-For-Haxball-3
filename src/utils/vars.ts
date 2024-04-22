@@ -5,7 +5,7 @@ import enjson from "../../i18n/en.message.json"
 import x4futsal from "../../maps/x4-futsal.json"
 import x7futsal from "../../maps/x7-futsal.json"
 import x1andx2futsal from "../../maps/x1-and-x2futsal.json"
-
+import unisBrazilian from "../../unis/unis.json"
 
 export const maps = {
     x3futsal,
@@ -56,4 +56,8 @@ export enum WritingStyles {
     small = "small",
     smallBold = "small-bold",
     smallItalic = "small-italic"
+}
+
+export const shirts = {
+    unisBrazilian
 }
