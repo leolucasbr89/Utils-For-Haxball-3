@@ -15,4 +15,9 @@ export class MathEntity {
         const differenceSpace: number = this.pointDistance(firstPosition, lastPosition)
         return Math.round((differenceSpace / differenceTime) / 10)
     }
+    static calculateProportion(knownValue: number, knownValueEquivalent: number, unknownValueEquivalent: number) {
+        let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
+        return unknownValue
+    }
+    
 }

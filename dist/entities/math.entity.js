@@ -14,6 +14,10 @@ class MathEntity {
         const differenceSpace = this.pointDistance(firstPosition, lastPosition);
         return Math.round((differenceSpace / differenceTime) / 10);
     }
+    static calculateProportion(knownValue, knownValueEquivalent, unknownValueEquivalent) {
+        let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
+        return unknownValue;
+    }
 }
 exports.MathEntity = MathEntity;
 //# sourceMappingURL=math.entity.js.map
