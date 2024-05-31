@@ -2,6 +2,7 @@ import { FatherClass } from "./father.js";
 import { WritingStyles, hexadecimalColors, idioms } from "../index.js"
 
 export class Referee extends FatherClass {
+    
     constructor(publicRoom: RoomObject) {
         super(publicRoom)
     }
@@ -26,6 +27,7 @@ export class Referee extends FatherClass {
         }
     }
     async SendMessageWhenStopGame() {
+
         await this.SendMessage("PÍÍÍÍÍÍÍÍÍÍÍÍ")
     }
     private ChoosePauseMessage(idiom: idioms, id: number, name: string): string{
