@@ -10,6 +10,7 @@ export class Storyteller extends FatherClass {
     private GoldenGoalMessages: string[] = []
     private indice: number = 0 
     idiom: idioms
+    DidTheNarratorSendAGoldenGoalMessage: boolean = false
     constructor(publicRoom: RoomObject, idiom: idioms) {
         super(publicRoom)
         this.idiom = idiom
@@ -47,6 +48,7 @@ export class Storyteller extends FatherClass {
         }
     }
     async SendGoldenGoalMessage() {
+        this.DidTheNarratorSendAGoldenGoalMessage = true
         this.indice = MathEntity.generateIntegerBetweenMinAndMax(0, this.GoldenGoalMessages.length - 1)
         await this.SendMessage(this.GoldenGoalMessages[this.indice])
     }
