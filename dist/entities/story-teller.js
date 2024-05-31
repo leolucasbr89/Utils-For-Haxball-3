@@ -20,6 +20,7 @@ class Storyteller extends father_js_1.FatherClass {
         this.OwnGoalMessages = [];
         this.GoldenGoalMessages = [];
         this.indice = 0;
+        this.DidTheNarratorSendAGoldenGoalMessage = false;
         this.idiom = idiom;
         this.ChooseIdiom();
     }
@@ -63,6 +64,7 @@ class Storyteller extends father_js_1.FatherClass {
     }
     SendGoldenGoalMessage() {
         return __awaiter(this, void 0, void 0, function* () {
+            this.DidTheNarratorSendAGoldenGoalMessage = true;
             this.indice = math_entity_js_1.MathEntity.generateIntegerBetweenMinAndMax(0, this.GoldenGoalMessages.length - 1);
             yield this.SendMessage(this.GoldenGoalMessages[this.indice]);
         });
