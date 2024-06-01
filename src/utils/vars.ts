@@ -5,6 +5,7 @@ import enjson from "../../i18n/en.message.json"
 import x4futsal from "../../maps/x4-futsal.json"
 import x7futsal from "../../maps/x7-futsal.json"
 import x1andx2futsal from "../../maps/x1-and-x2futsal.json"
+import x5futsal from "../../maps/x5-futsal.json"
 
 export const hexadecimalColors = {
     "red": 0xFF0000,
@@ -34,13 +35,14 @@ export const hexadecimalColors = {
 
 
 import { BrazilianShirts } from "./shirts/brazilian-shirts.js"
-import { SpanishShirts } from "./shirts/spanish-shirs"
+import { SpanishShirts } from "./shirts/spanish-shirts"
 
 export const maps = {
     x3futsal,
     x4futsal,
     x7futsal,
-    x1andx2futsal
+    x1andx2futsal,
+    x5futsal
 }
 
 export const messages = {

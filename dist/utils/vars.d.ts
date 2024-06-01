@@ -2029,6 +2029,280 @@ export declare const maps: {
             damping: number;
         };
     };
+    x5futsal: {
+        name: string;
+        width: number;
+        height: number;
+        spawnDistance: number;
+        bg: {
+            type: string;
+            width: number;
+            height: number;
+            kickOffRadius: number;
+            cornerRadius: number;
+        };
+        vertexes: ({
+            x: number;
+            y: number;
+            bCoef: number;
+            cMask: string[];
+            trait: string;
+            curve: number;
+            color?: undefined;
+        } | {
+            x: number;
+            y: number;
+            bCoef: number;
+            cMask: string[];
+            trait: string;
+            curve: number;
+            color: string;
+        } | {
+            x: number;
+            y: number;
+            trait: string;
+            bCoef?: undefined;
+            cMask?: undefined;
+            curve?: undefined;
+            color?: undefined;
+        } | {
+            x: number;
+            y: number;
+            bCoef: number;
+            trait: string;
+            cMask?: undefined;
+            curve?: undefined;
+            color?: undefined;
+        } | {
+            x: number;
+            y: number;
+            bCoef: number;
+            trait: string;
+            curve: number;
+            cMask?: undefined;
+            color?: undefined;
+        } | {
+            x: number;
+            y: number;
+            trait: string;
+            curve: number;
+            bCoef?: undefined;
+            cMask?: undefined;
+            color?: undefined;
+        })[];
+        segments: ({
+            v0: number;
+            v1: number;
+            curve: number;
+            trait: string;
+            x?: undefined;
+            cGroup?: undefined;
+            vis?: undefined;
+            color?: undefined;
+            bCoef?: undefined;
+            cMask?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            trait: string;
+            curve?: undefined;
+            x?: undefined;
+            cGroup?: undefined;
+            vis?: undefined;
+            color?: undefined;
+            bCoef?: undefined;
+            cMask?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            trait: string;
+            x: number;
+            curve?: undefined;
+            cGroup?: undefined;
+            vis?: undefined;
+            color?: undefined;
+            bCoef?: undefined;
+            cMask?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            curve: number;
+            cGroup: string[];
+            trait: string;
+            x?: undefined;
+            vis?: undefined;
+            color?: undefined;
+            bCoef?: undefined;
+            cMask?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            curve: number;
+            vis: boolean;
+            color: string;
+            bCoef: number;
+            cMask: string[];
+            trait: string;
+            y: number;
+            x?: undefined;
+            cGroup?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            curve: number;
+            vis: boolean;
+            color: string;
+            bCoef: number;
+            cMask: string[];
+            trait: string;
+            x: number;
+            cGroup?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            vis: boolean;
+            color: string;
+            bCoef: number;
+            trait: string;
+            y: number;
+            curve?: undefined;
+            x?: undefined;
+            cGroup?: undefined;
+            cMask?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            curve: number;
+            vis: boolean;
+            color: string;
+            bCoef: number;
+            trait: string;
+            x?: undefined;
+            cGroup?: undefined;
+            cMask?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            curve: number;
+            vis: boolean;
+            color: string;
+            bCoef: number;
+            trait: string;
+            x: number;
+            cGroup?: undefined;
+            cMask?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            curve: number;
+            vis: boolean;
+            color: string;
+            bCoef: number;
+            cMask: string[];
+            trait: string;
+            x?: undefined;
+            cGroup?: undefined;
+            y?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            curve: number;
+            vis: boolean;
+            color: string;
+            bCoef: number;
+            trait: string;
+            x: number;
+            y: number;
+            cGroup?: undefined;
+            cMask?: undefined;
+        })[];
+        goals: {
+            p0: number[];
+            p1: number[];
+            team: string;
+        }[];
+        discs: ({
+            radius: number;
+            pos: number[];
+            color: string;
+            trait: string;
+            invMass?: undefined;
+            bCoef?: undefined;
+        } | {
+            radius: number;
+            invMass: number;
+            pos: number[];
+            color: string;
+            bCoef: number;
+            trait: string;
+        })[];
+        planes: ({
+            normal: number[];
+            dist: number;
+            trait: string;
+            bCoef?: undefined;
+            cMask?: undefined;
+        } | {
+            normal: number[];
+            dist: number;
+            bCoef: number;
+            cMask: string[];
+            trait?: undefined;
+        })[];
+        traits: {
+            ballArea: {
+                vis: boolean;
+                bCoef: number;
+                cMask: string[];
+            };
+            goalPost: {
+                radius: number;
+                invMass: number;
+                bCoef: number;
+            };
+            goalNet: {
+                vis: boolean;
+                bCoef: number;
+                cMask: string[];
+            };
+            kickOffBarrier: {
+                vis: boolean;
+                bCoef: number;
+                cGroup: string[];
+                cMask: string[];
+            };
+            line: {
+                vis: boolean;
+                bCoef: number;
+                cMask: string[];
+            };
+            arco: {
+                radius: number;
+                cMask: string[];
+                color: string;
+            };
+        };
+        playerPhysics: {
+            bCoef: number;
+            acceleration: number;
+            kickingAcceleration: number;
+            kickStrength: number;
+        };
+        ballPhysics: {
+            radius: number;
+            bCoef: number;
+            invMass: number;
+            damping: number;
+            color: string;
+        };
+    };
 };
 export declare const messages: {
     en: {

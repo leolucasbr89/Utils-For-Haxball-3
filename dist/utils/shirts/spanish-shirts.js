@@ -1,7 +1,8 @@
-import { Team } from "../../types/types.js";
-import { hexadecimalColors } from "../vars";
-
-export const SpanishShirts: Team[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SpanishShirts = void 0;
+const vars_js_1 = require("../vars.js");
+exports.SpanishShirts = [
     {
         name: "Barcelona",
         cheerphrases: [
@@ -11,13 +12,13 @@ export const SpanishShirts: Team[] = [
             Barça, Barça, Baaarça!
             `
         ],
-        color: hexadecimalColors.maroon,
-        shirt: {angle: 360, textColor: 0xFFD700, colors: [0x00008B, 0x8B0000, 0x00008B]}
+        color: vars_js_1.hexadecimalColors.maroon,
+        shirt: { angle: 360, textColor: 0xFFD700, colors: [0x00008B, 0x8B0000, 0x00008B] }
     },
     {
         name: "Real Madrid",
         cheerphrases: [
-        `Historia que tú hiciste, historia por hacer
+            `Historia que tú hiciste, historia por hacer
         porque nadie resiste tus ganas de vencer.
         Ya salen las estrellas mi viejo Chamartín
         de lejos y de cerca nos traes hasta aquí.
@@ -29,8 +30,10 @@ export const SpanishShirts: Team[] = [
         ¡HALA MADRID!
         y nada más, y nada más
         ¡HALA MADRID!
-        `],
-        color: hexadecimalColors.gray,
-        shirt: {angle: 0, textColor: 0xDAA520, colors: [0xFFFAFA, 0xFFFAFA, 0xFFFAFA]}
+        `
+        ],
+        color: vars_js_1.hexadecimalColors.gray,
+        shirt: { angle: 0, textColor: 0xDAA520, colors: [0xFFFAFA, 0xFFFAFA, 0xFFFAFA] }
     }
-]
+];
+//# sourceMappingURL=spanish-shirts.js.map
