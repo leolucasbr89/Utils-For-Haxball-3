@@ -1,2 +1,2 @@
-import { Team } from "../../types/types.js";
+import { Team } from "../../types/types";
 export declare const BrazilianShirts: Team[];
