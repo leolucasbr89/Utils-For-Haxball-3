@@ -1,3 +1,28 @@
+export declare const hexadecimalColors: {
+    red: number;
+    yellow: number;
+    green: number;
+    blue: number;
+    purple: number;
+    orange: number;
+    pink: number;
+    cyan: number;
+    brown: number;
+    lightblue: number;
+    lightgreen: number;
+    gray: number;
+    violet: number;
+    gold: number;
+    silver: number;
+    turquoise: number;
+    olive: number;
+    coral: number;
+    salmon: number;
+    royalblue: number;
+    redHax: number;
+    blueHax: number;
+    maroon: number;
+};
 export declare const maps: {
     x3futsal: {
         name: string;
@@ -2021,31 +2046,6 @@ export declare const messages: {
         mensagensAutogol: string[];
         mensagensGol: string[];
     };
-};
-export declare const hexadecimalColors: {
-    red: number;
-    yellow: number;
-    green: number;
-    blue: number;
-    purple: number;
-    orange: number;
-    pink: number;
-    cyan: number;
-    brown: number;
-    lightblue: number;
-    lightgreen: number;
-    gray: number;
-    violet: number;
-    gold: number;
-    silver: number;
-    turquoise: number;
-    olive: number;
-    coral: number;
-    salmon: number;
-    royalblue: number;
-    redHax: number;
-    blueHax: number;
-    maroon: number;
 };
 export declare enum WritingStyles {
     normal = "normal",

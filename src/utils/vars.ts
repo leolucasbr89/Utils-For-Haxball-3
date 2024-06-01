@@ -5,24 +5,6 @@ import enjson from "../../i18n/en.message.json"
 import x4futsal from "../../maps/x4-futsal.json"
 import x7futsal from "../../maps/x7-futsal.json"
 import x1andx2futsal from "../../maps/x1-and-x2futsal.json"
-import { BrazilianShirts } from "./shirts/brazilian-shirts.js"
-import { SpanishShirts } from "./shirts/spanish-shirs"
-
-export const maps = {
-    x3futsal,
-    x4futsal,
-    x7futsal,
-    x1andx2futsal
-}
-
-export const messages = {
-    en: enjson,
-    es: espanoljson,
-    pt: ptjson
-}
-
-
-
 
 export const hexadecimalColors = {
     "red": 0xFF0000,
@@ -49,6 +31,28 @@ export const hexadecimalColors = {
     "blueHax": 0x5482da,
     "maroon": 0x831d1c
 }
+
+
+import { BrazilianShirts } from "./shirts/brazilian-shirts.js"
+import { SpanishShirts } from "./shirts/spanish-shirs"
+
+export const maps = {
+    x3futsal,
+    x4futsal,
+    x7futsal,
+    x1andx2futsal
+}
+
+export const messages = {
+    en: enjson,
+    es: espanoljson,
+    pt: ptjson
+}
+
+
+
+
+
 
 export enum WritingStyles {
     normal = "normal",

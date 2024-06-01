@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.shirts = exports.WritingStyles = exports.hexadecimalColors = exports.messages = exports.maps = void 0;
+exports.shirts = exports.WritingStyles = exports.messages = exports.maps = exports.hexadecimalColors = void 0;
 const x3_futsal_json_1 = __importDefault(require("../../maps/x3-futsal.json"));
 const es_message_json_1 = __importDefault(require("../../i18n/es.message.json"));
 const pt_message_json_1 = __importDefault(require("../../i18n/pt.message.json"));
@@ -11,19 +11,6 @@ const en_message_json_1 = __importDefault(require("../../i18n/en.message.json"))
 const x4_futsal_json_1 = __importDefault(require("../../maps/x4-futsal.json"));
 const x7_futsal_json_1 = __importDefault(require("../../maps/x7-futsal.json"));
 const x1_and_x2futsal_json_1 = __importDefault(require("../../maps/x1-and-x2futsal.json"));
-const brazilian_shirts_js_1 = require("./shirts/brazilian-shirts.js");
-const spanish_shirs_1 = require("./shirts/spanish-shirs");
-exports.maps = {
-    x3futsal: x3_futsal_json_1.default,
-    x4futsal: x4_futsal_json_1.default,
-    x7futsal: x7_futsal_json_1.default,
-    x1andx2futsal: x1_and_x2futsal_json_1.default
-};
-exports.messages = {
-    en: en_message_json_1.default,
-    es: es_message_json_1.default,
-    pt: pt_message_json_1.default
-};
 exports.hexadecimalColors = {
     "red": 0xFF0000,
     "yellow": 0xFFFF00,
@@ -48,6 +35,19 @@ exports.hexadecimalColors = {
     "redHax": 0xdb6259,
     "blueHax": 0x5482da,
     "maroon": 0x831d1c
+};
+const brazilian_shirts_js_1 = require("./shirts/brazilian-shirts.js");
+const spanish_shirs_1 = require("./shirts/spanish-shirs");
+exports.maps = {
+    x3futsal: x3_futsal_json_1.default,
+    x4futsal: x4_futsal_json_1.default,
+    x7futsal: x7_futsal_json_1.default,
+    x1andx2futsal: x1_and_x2futsal_json_1.default
+};
+exports.messages = {
+    en: en_message_json_1.default,
+    es: es_message_json_1.default,
+    pt: pt_message_json_1.default
 };
 var WritingStyles;
 (function (WritingStyles) {
