@@ -1,5 +1,5 @@
 import { Team } from "../../types/types.js";
-import { hexadecimalColors } from "../vars.js";
+import { hexadecimalColors } from "../vars";
 
 export const BrazilianShirts: Team[] = [
     {
