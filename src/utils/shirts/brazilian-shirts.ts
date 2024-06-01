@@ -1,5 +1,5 @@
-import { Team } from "../../types/types";
-import { hexadecimalColors } from "../vars";
+import { Team } from "../../types/types.js";
+import { hexadecimalColors } from "../vars.js";
 
 export const BrazilianShirts: Team[] = [
     {
@@ -15,7 +15,7 @@ export const BrazilianShirts: Team[] = [
         Vamos lutar e conquistar!` 
     ],
         shirt: {angle: 20, textColor:0xB8860B, colors: [0x215E21, 0xFFFAFA, 0xA62A2A]},
-        color: hexadecimalColors.red
+        color: hexadecimalColors.orange
     },
     {
         name: "Flamengo",

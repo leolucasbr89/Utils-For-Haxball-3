@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BrazilianShirts = void 0;
-const vars_1 = require("../vars");
+const vars_js_1 = require("../vars.js");
 exports.BrazilianShirts = [
     {
         name: "Fluminense",
@@ -16,7 +16,7 @@ exports.BrazilianShirts = [
         Vamos lutar e conquistar!`
         ],
         shirt: { angle: 20, textColor: 0xB8860B, colors: [0x215E21, 0xFFFAFA, 0xA62A2A] },
-        color: vars_1.hexadecimalColors.red
+        color: vars_js_1.hexadecimalColors.orange
     },
     {
         name: "Flamengo",
@@ -33,7 +33,7 @@ exports.BrazilianShirts = [
         Com muito amor!`,
         ],
         shirt: { angle: 90, textColor: 0xFFFAFA, colors: [0xFF0000, 0x00000, 0xFF0000] },
-        color: vars_1.hexadecimalColors.red
+        color: vars_js_1.hexadecimalColors.red
     },
     {
         "name": "Vasco",
@@ -72,7 +72,7 @@ exports.BrazilianShirts = [
             Dale dale Tricolor
             Dale dale dale dale Tricolor`
         ],
-        color: vars_1.hexadecimalColors.blueHax,
+        color: vars_js_1.hexadecimalColors.blueHax,
         shirt: { angle: 0, textColor: 0xFFFFFF, colors: [0x75ACFF, 0x000000, 0x75ACFF] }
     },
     {
@@ -88,7 +88,7 @@ exports.BrazilianShirts = [
             Eu sooooooou, Corinthians!
             Eu sooooooou, Corinthians!`
         ],
-        color: vars_1.hexadecimalColors.gray,
+        color: vars_js_1.hexadecimalColors.gray,
         shirt: { angle: 90, textColor: 0x000000, colors: [0xFFFFFF] }
     },
     {
@@ -104,7 +104,7 @@ exports.BrazilianShirts = [
             Tem que jogar com a alma e o coração (olê, olê)
              `
         ],
-        color: vars_1.hexadecimalColors.green,
+        color: vars_js_1.hexadecimalColors.green,
         shirt: { angle: 0, textColor: 0xFFFFFF, colors: [0x006920] }
     },
     {
@@ -119,7 +119,7 @@ exports.BrazilianShirts = [
             Nascer, viver e no Santos morrer
             É um orgulho que nem todos podem ter`
         ],
-        color: vars_1.hexadecimalColors.gray,
+        color: vars_js_1.hexadecimalColors.gray,
         shirt: { angle: 0, textColor: 0x000000, colors: [0xFFFFFF] }
     },
     {
@@ -137,7 +137,7 @@ exports.BrazilianShirts = [
             Colorado das glórias
             Orgulho do Brasil`
         ],
-        color: vars_1.hexadecimalColors.redHax,
+        color: vars_js_1.hexadecimalColors.redHax,
         shirt: { angle: 90, textColor: 0xFAFAFA, colors: [0xC90000, 0x990000, 0xC90000] }
     },
     {
@@ -157,7 +157,7 @@ exports.BrazilianShirts = [
             Nosso lema é vencer
             Te apoiarei até morrer`
         ],
-        color: vars_1.hexadecimalColors.gray,
+        color: vars_js_1.hexadecimalColors.gray,
         shirt: { angle: 0, textColor: 0xFF0000, colors: [0x000000, 0xFFFFFF, 0x000000] }
     },
     {
@@ -171,7 +171,7 @@ exports.BrazilianShirts = [
             Guerreiro Dos Gramados
             Vamos, Vamos Cruzeiro`
         ],
-        color: vars_1.hexadecimalColors.blueHax,
+        color: vars_js_1.hexadecimalColors.blueHax,
         shirt: { angle: 0, textColor: 0xFFFFFF, colors: [0x0600A6] }
     }
 ];

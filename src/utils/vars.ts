@@ -30,7 +30,7 @@ export const hexadecimalColors = {
     "redHax": 0xdb6259,
     "blueHax": 0x5482da,
     "maroon": 0x831d1c
-}
+};
 
 
 import { BrazilianShirts } from "./shirts/brazilian-shirts.js"
