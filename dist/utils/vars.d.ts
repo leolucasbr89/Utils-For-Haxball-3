@@ -1,4 +1,3 @@
-import { Team } from "../types/types";
 export declare const maps: {
     x3futsal: {
         name: string;
@@ -2057,5 +2056,7 @@ export declare enum WritingStyles {
     smallItalic = "small-italic"
 }
 export declare const shirts: {
-    unisBrazilian: Team[];
+    BrazilianShirts: import("..").Team[];
+    SpanishShirts: import("..").Team[];
+    AllUniforms: import("..").Team[];
 };

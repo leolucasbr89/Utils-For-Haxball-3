@@ -2,28 +2,31 @@ import { FatherClass } from "./father.js";
 import { WritingStyles, hexadecimalColors, idioms } from "../index.js"
 
 export class Referee extends FatherClass {
+    referename: string = "Referee"
     
-    constructor(publicRoom: RoomObject) {
+    constructor(publicRoom: RoomObject, idiom: idioms) {
         super(publicRoom)
+        this.SetName(idiom)
+    }
+    SetName(idiom: idioms) {
+        if (idiom === "en") {
+            this.referename = "Referee"
+        } else if (idiom === "pt") {
+            this.referename = "Juiz"
+        } else if (idiom === "es") {
+            this.referename = "Árbitro"
+        }
     }
 
-    async SendMessage(message: string, idiom?: idioms,id?: number) {
-        let referename: string|undefined = undefined
-        if (idiom === "en") {
-            referename = "Referee"
-        } else if (idiom === "pt") {
-            referename = "Juiz"
-        } else if (idiom === "es") {
-            referename = "Árbitro"
-        }
-        await this.publicRoom.sendAnnouncement(`${referename}: ${message}`, id, hexadecimalColors.yellow, WritingStyles.bold)
+    async SendMessage(message: string, id?: number) {
+        await this.publicRoom.sendAnnouncement(`${this.referename}: ${message}`, id, hexadecimalColors.yellow, WritingStyles.bold)
     }
 
     async PauseGame(askedforabreak: PlayerObject|undefined, idiom: idioms) {
         let message: string|undefined = askedforabreak ? this.ChoosePauseMessage(idiom, askedforabreak.id, askedforabreak.name) : undefined
         
         if (message) {
-            await this.SendMessage(`PÍÍÍÍÍ, ${message}`, idiom)
+            await this.SendMessage(`PÍÍÍÍÍ, ${message}`)
         }
     }
     async SendMessageWhenStopGame() {

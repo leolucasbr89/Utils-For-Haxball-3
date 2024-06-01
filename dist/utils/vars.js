@@ -11,6 +11,8 @@ const en_message_json_1 = __importDefault(require("../../i18n/en.message.json"))
 const x4_futsal_json_1 = __importDefault(require("../../maps/x4-futsal.json"));
 const x7_futsal_json_1 = __importDefault(require("../../maps/x7-futsal.json"));
 const x1_and_x2futsal_json_1 = __importDefault(require("../../maps/x1-and-x2futsal.json"));
+const brazilian_shirts_js_1 = require("./shirts/brazilian-shirts.js");
+const spanish_shirs_1 = require("./shirts/spanish-shirs");
 exports.maps = {
     x3futsal: x3_futsal_json_1.default,
     x4futsal: x4_futsal_json_1.default,
@@ -56,64 +58,9 @@ var WritingStyles;
     WritingStyles["smallBold"] = "small-bold";
     WritingStyles["smallItalic"] = "small-italic";
 })(WritingStyles || (exports.WritingStyles = WritingStyles = {}));
-const unisBrazilian = [
-    {
-        name: "Fluminense",
-        cheerphrases: [`
-        Vamos, Fluzão, com raça e coração,
-        Com garra e determinação,
-        Vamos mostrar quem é o melhor,
-        Com amor, somos vencedores!`,
-            `Guerreiros das Laranjeiras,
-        Com garra e amor a jogar,
-        Com o manto tricolor,
-        Vamos lutar e conquistar!`
-        ],
-        shirt: { angle: 20, textColor: 0xB8860B, colors: [0x215E21, 0xFFFAFA, 0xA62A2A] },
-        color: exports.hexadecimalColors.red
-    },
-    {
-        name: "Flamengo",
-        cheerphrases: [
-            `Uma vez Flamengo, sempre Flamengo,
-        Flamengo sempre eu hei de ser.
-        É meu maior prazer, vê-lo brilhar,
-        Seja na terra, seja no mar.
-        Vencer, vencer, vencer!`,
-            `Eu sou Flamengo, até morrer,
-        Eu sou Flamengo, com muito amor.
-        Não é mole, não, não é mole não,
-        Ser rubro-negro, com muito orgulho,
-        Com muito amor!`,
-        ],
-        shirt: { angle: 90, textColor: 0xFFFAFA, colors: [0xFF0000, 0x00000, 0xFF0000] },
-        color: exports.hexadecimalColors.red
-    },
-    {
-        "name": "Vasco",
-        "cheerphrases": [
-            `Gigante pela própria natureza, 
-          Vasco é o teu nome!`,
-            `Vasco, minha vida, 
-          minha história, 
-          meu primeiro amor!`
-        ],
-        "color": 0xd3d3d3,
-        shirt: { angle: 135, textColor: 0xFF0000, colors: [0xFFFFFF, 0x000000, 0xFFFFFF] }
-    },
-    {
-        "name": "Botafogo",
-        "cheerphrases": [
-            `Fogo, minha paixão, 
-          Botafogo no coração!`,
-            `Ser Botafogo é ser campeão, 
-          na raça e no coração!`
-        ],
-        "color": 0x333333,
-        shirt: { angle: 225, textColor: 0xDAA520, colors: [0x000000, 0x1C1C1C, 0x000000] }
-    },
-];
 exports.shirts = {
-    unisBrazilian
+    BrazilianShirts: brazilian_shirts_js_1.BrazilianShirts,
+    SpanishShirts: spanish_shirs_1.SpanishShirts,
+    AllUniforms: [...brazilian_shirts_js_1.BrazilianShirts, ...spanish_shirs_1.SpanishShirts]
 };
 //# sourceMappingURL=vars.js.map

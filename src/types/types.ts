@@ -6,5 +6,5 @@ export type Team =  {
     name: string,
     cheerphrases: string[]
     color: number,
-    regiao?: string
+    region?: string
 }

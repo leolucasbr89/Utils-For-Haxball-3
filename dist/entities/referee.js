@@ -13,29 +13,32 @@ exports.Referee = void 0;
 const father_js_1 = require("./father.js");
 const index_js_1 = require("../index.js");
 class Referee extends father_js_1.FatherClass {
-    constructor(publicRoom) {
+    constructor(publicRoom, idiom) {
         super(publicRoom);
+        this.referename = "Referee";
+        this.SetName(idiom);
     }
-    SendMessage(message, idiom, id) {
+    SetName(idiom) {
+        if (idiom === "en") {
+            this.referename = "Referee";
+        }
+        else if (idiom === "pt") {
+            this.referename = "Juiz";
+        }
+        else if (idiom === "es") {
+            this.referename = "Árbitro";
+        }
+    }
+    SendMessage(message, id) {
         return __awaiter(this, void 0, void 0, function* () {
-            let referename = undefined;
-            if (idiom === "en") {
-                referename = "Referee";
-            }
-            else if (idiom === "pt") {
-                referename = "Juiz";
-            }
-            else if (idiom === "es") {
-                referename = "Árbitro";
-            }
-            yield this.publicRoom.sendAnnouncement(`${referename}: ${message}`, id, index_js_1.hexadecimalColors.yellow, index_js_1.WritingStyles.bold);
+            yield this.publicRoom.sendAnnouncement(`${this.referename}: ${message}`, id, index_js_1.hexadecimalColors.yellow, index_js_1.WritingStyles.bold);
         });
     }
     PauseGame(askedforabreak, idiom) {
         return __awaiter(this, void 0, void 0, function* () {
             let message = askedforabreak ? this.ChoosePauseMessage(idiom, askedforabreak.id, askedforabreak.name) : undefined;
             if (message) {
-                yield this.SendMessage(`PÍÍÍÍÍ, ${message}`, idiom);
+                yield this.SendMessage(`PÍÍÍÍÍ, ${message}`);
             }
         });
     }
