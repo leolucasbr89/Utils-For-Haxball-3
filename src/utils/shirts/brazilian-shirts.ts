@@ -172,5 +172,51 @@ export const BrazilianShirts: Team[] = [
         ],
         color: hexadecimalColors.blueHax,
         shirt: {angle: 0,  textColor: 0xFFFFFF, colors: [0x0600A6]}
+    },
+    {
+        name: "América MG",
+        cheerphrases: [
+        `Mantendo nosso espírito esportivo,
+        social e cultural.
+        Vamos cantando o hino do América
+        tão famoso e tradicional.
+
+        América és o maior,
+        teu futebol é sensacional.
+        Cantamos para o mundo inteiro,
+        tu és a gloria do esporte nacional.`
+        ],
+        color: hexadecimalColors.lightgreen,
+        shirt: {angle: 0, textColor: 0xFFFFFF, colors: [0x109600, 0x000000, 0x109600]}
+    },
+    {
+        name: "Chapecoense",
+        cheerphrases: [`
+            Agora eu quero ver, você, chorar
+            Você vai estremecer, quando minha chape jogar
+            Eu bem que te avisei, e você sabia
+            Troque de camisa, e tenha alegria
+            Se você é triste, é por culpa sua
+            E pra te consolar minha chape só fatura
+        `],
+        color: hexadecimalColors.lightgreen,
+        shirt: { angle: 0, textColor: 0xFAFAFA, colors: [0x007A00, 0x005406, 0x007A00]}
+    },
+    {
+        name: "São Paulo",
+        cheerphrases: [
+        `O Rei Mandou
+        Porque São Paulo É Sentimento
+        Como Eu Te Amo, Tricolor
+        Doutor, Eu Não Me Engano
+        Pode Vir Todo Mundo
+        Domingo Eu Vou Lá No Morumbi
+        Nós Queremos Gavião
+        Bonde do Mal
+        União sinistra
+        Sou Sou Tricolor`
+        ],
+        color: hexadecimalColors.redHax,
+        shirt: {angle: 90,  textColor: 0xFF0000, colors: [0xFFFFFF]}
     }
 ]

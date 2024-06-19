@@ -36,6 +36,7 @@ export const hexadecimalColors = {
 
 import { BrazilianShirts } from "./shirts/brazilian-shirts.js"
 import { SpanishShirts } from "./shirts/spanish-shirts"
+import { CountriesShirts } from "./shirts/countries-shirts"
 
 export const maps = {
     x3futsal,
@@ -71,5 +72,6 @@ export enum WritingStyles {
 export const shirts = {
     BrazilianShirts,
     SpanishShirts,
-    AllUniforms: [...BrazilianShirts, ...SpanishShirts]
+    CountriesShirts,
+    AllUniforms: [...BrazilianShirts, ...SpanishShirts, ...CountriesShirts]
 }
