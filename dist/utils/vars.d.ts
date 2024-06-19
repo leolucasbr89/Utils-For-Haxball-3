@@ -2332,5 +2332,6 @@ export declare enum WritingStyles {
 export declare const shirts: {
     BrazilianShirts: import("..").Team[];
     SpanishShirts: import("..").Team[];
+    CountriesShirts: import("..").Team[];
     AllUniforms: import("..").Team[];
 };

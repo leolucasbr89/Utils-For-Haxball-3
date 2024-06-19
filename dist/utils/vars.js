@@ -39,6 +39,7 @@ exports.hexadecimalColors = {
 };
 const brazilian_shirts_js_1 = require("./shirts/brazilian-shirts.js");
 const spanish_shirts_1 = require("./shirts/spanish-shirts");
+const countries_shirts_1 = require("./shirts/countries-shirts");
 exports.maps = {
     x3futsal: x3_futsal_json_1.default,
     x4futsal: x4_futsal_json_1.default,
@@ -63,6 +64,7 @@ var WritingStyles;
 exports.shirts = {
     BrazilianShirts: brazilian_shirts_js_1.BrazilianShirts,
     SpanishShirts: spanish_shirts_1.SpanishShirts,
-    AllUniforms: [...brazilian_shirts_js_1.BrazilianShirts, ...spanish_shirts_1.SpanishShirts]
+    CountriesShirts: countries_shirts_1.CountriesShirts,
+    AllUniforms: [...brazilian_shirts_js_1.BrazilianShirts, ...spanish_shirts_1.SpanishShirts, ...countries_shirts_1.CountriesShirts]
 };
 //# sourceMappingURL=vars.js.map
