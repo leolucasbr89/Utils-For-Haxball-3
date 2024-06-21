@@ -219,6 +219,98 @@ exports.BrazilianShirts = [
         ],
         color: vars_1.hexadecimalColors.redHax,
         shirt: { angle: 90, textColor: 0xFF0000, colors: [0xFFFFFF] }
+    },
+    {
+        name: "Athletico Paranaense",
+        cheerphrases: [
+            `Deus, pela Pátria
+        Pelo Atlético até morrer
+        Vamos Furacão,
+        Viemos pra vencer
+        Por Deus, pela Pátria
+        Pelo Atlético até morrer`
+        ],
+        color: vars_1.hexadecimalColors.redHax,
+        shirt: { angle: 45, textColor: 0xFAFAFA, colors: [0xC90000, 0x000000, 0xC90000] }
+    },
+    {
+        name: "Bahia",
+        cheerphrases: [
+            `Somos da turma tricolor
+        Somos a voz do campeão
+        Somos do povo um clamor
+        Ninguém nos vence em vibração
+        Vamos avante esquadrão
+        Vamos serás um vencedor
+        Vamos conquistar mais um tento
+        BAHIA, BAHIA, BAHIA!
+        Ouve esta voz que é teu alento
+        BAHIA, BAHIA, BAHIA!
+        Mais um, mais um Bahia
+        Mais um mais um título de glória
+        Mais um, mais um Bahia
+        É assim que se resume a sua história.`
+        ],
+        color: vars_1.hexadecimalColors.blueHax,
+        shirt: { angle: 0, textColor: 0xFAFAFA, colors: [0x2908FF, 0xFF0000, 0x2908FF] }
+    },
+    {
+        name: "Botafogo PB",
+        cheerphrases: [
+            `Essa é minha alegria de coração
+        Ver o belo jogar no mundão
+        Tudo que eu fiz na vida foi te amar
+        E esse meu sentimento não vai parar 
+        (Eu quero ver)
+        Eu quero ver o Belo jogar com raça para vencer`,
+            `Do belo eu sou! 
+        🥁🥁🥁🥁🥁🥁
+        Do belo eu sou! 
+        🥁🥁🥁🥁🥁🥁
+        Do belo eu sou! 
+        🥁🥁🥁🥁🥁🥁
+        `
+        ],
+        color: vars_1.hexadecimalColors.gray,
+        shirt: { angle: 0, textColor: 0xD40D12, colors: [0x2E2331, 0xE6EDF5, 0x2E2331] }
+    },
+    {
+        name: "Criciúma",
+        cheerphrases: [
+            `Toda semana venho ver o campeão
+        Porque eu levo na alma
+        Essa loucura que sinto por ti
+        Não se compara com nada
+        Ganhas ou percas eu venho te apoiar
+        O Criciúma é minha vida
+        É a alegria do meu coração
+        E de Santa Catarina
+        Tricolor venho te ver
+        E não importa mais nada
+        Vamos vamos meu tigre
+        Tua torcida não pára`
+        ],
+        color: vars_1.hexadecimalColors.yellow,
+        shirt: { angle: 90, textColor: 0xFFFFFF, colors: [0xE4C918, 0x0E0E0E, 0xD9D9D9] }
+    },
+    {
+        name: "Red Bull Bragantino",
+        cheerphrases: [
+            `Chegou a hora da luta
+        É o alvinegro em ação
+        Bragança toda se inflama
+        Massa Bruta campeão
+        Na força de uma raça
+        Na luta já vencida
+        Ergamos sempre uma taça
+        Pra grande fiel torcida
+        Bragantino o melhor
+        Primeiro em emoção
+        No campo é o maior
+        Arrebenta coração`
+        ],
+        color: vars_1.hexadecimalColors.gray,
+        shirt: { angle: 0, textColor: 0xFF0000, colors: [0xFAFAFA] }
     }
 ];
 //# sourceMappingURL=brazilian-shirts.js.map

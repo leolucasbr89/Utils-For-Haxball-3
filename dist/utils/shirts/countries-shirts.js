@@ -94,6 +94,23 @@ exports.CountriesShirts = [
         ],
         shirt: { angle: 0, textColor: 0xFFFAFA, colors: [0x000000, 0xFF0000, 0xFFA500] },
         color: vars_1.hexadecimalColors.gray
+    },
+    {
+        name: "Uruguai",
+        cheerphrases: [
+            `Ya cruzamo´ el mundo
+        Pa verte jugar
+        Te seguimo´ siempre a todos lados
+        Nunca favoritos, siempre desde atrás
+        Así ganamos los campeonatos
+        A los jugadores les quiero pedir
+        Que transpiren bien la camiseta
+        Para dar la vuelta y ser campeón mundial
+        Como en 1950
+        Vamo´ Uruguay, Uruguay, Uruguay`
+        ],
+        color: vars_1.hexadecimalColors.royalblue,
+        shirt: { angle: 60, textColor: 0x000000, colors: [0x0D9EFF] }
     }
 ];
 //# sourceMappingURL=countries-shirts.js.map
