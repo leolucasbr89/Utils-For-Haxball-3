@@ -18,6 +18,14 @@ class MathEntity {
         let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
         return unknownValue;
     }
+    static horizontalPosition(x0, v0, theta, t) {
+        const v0x = v0 * Math.cos(theta);
+        return x0 + v0x * t;
+    }
+    static verticalPosition(y0, v0, theta, t, g = 9.8) {
+        const v0y = v0 * Math.sin(theta);
+        return y0 + v0y * t - 0.5 * g * t * t;
+    }
 }
 exports.MathEntity = MathEntity;
 //# sourceMappingURL=math.entity.js.map

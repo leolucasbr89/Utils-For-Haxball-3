@@ -19,5 +19,14 @@ export class MathEntity {
         let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
         return unknownValue
     }
+    static horizontalPosition(x0: number, v0: number, theta: number, t: number): number {
+        const v0x = v0 * Math.cos(theta);
+        return x0 + v0x * t;
+    }
+
+    static verticalPosition(y0: number, v0: number, theta: number, t: number, g: number = 9.8): number {
+        const v0y = v0 * Math.sin(theta);
+        return y0 + v0y * t - 0.5 * g * t * t;
+    }
     
 }
