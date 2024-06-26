@@ -6,4 +6,5 @@ export declare class MathEntity {
     static calculateProportion(knownValue: number, knownValueEquivalent: number, unknownValueEquivalent: number): number;
     static calculateFinalVelocity(u: number, a: number, s: number): number;
     static positionAtTime(s0: number, v0: number, a: number, t: number): number;
+    static timeAtPosition(s0: number, v0: number, a: number, s: number): number | null;
 }
