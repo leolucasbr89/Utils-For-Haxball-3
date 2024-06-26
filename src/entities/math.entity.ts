@@ -19,14 +19,12 @@ export class MathEntity {
         let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
         return unknownValue
     }
-    static horizontalPosition(x0: number, v0: number, theta: number, t: number): number {
-        const v0x = v0 * Math.cos(theta);
-        return x0 + v0x * t;
+    static calculateFinalVelocity(u: number, a: number, s: number): number {
+        const vSquared = u * u + 2 * a * s;
+        return Math.sqrt(vSquared);
     }
-
-    static verticalPosition(y0: number, v0: number, theta: number, t: number, g: number = 9.8): number {
-        const v0y = v0 * Math.sin(theta);
-        return y0 + v0y * t - 0.5 * g * t * t;
+    static positionAtTime(s0: number, v0: number, a: number, t: number): number {
+        return s0 + v0 * t + 0.5 * a * t * t;
     }
     
 }

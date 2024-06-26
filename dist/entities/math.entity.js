@@ -18,13 +18,12 @@ class MathEntity {
         let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
         return unknownValue;
     }
-    static horizontalPosition(x0, v0, theta, t) {
-        const v0x = v0 * Math.cos(theta);
-        return x0 + v0x * t;
+    static calculateFinalVelocity(u, a, s) {
+        const vSquared = u * u + 2 * a * s;
+        return Math.sqrt(vSquared);
     }
-    static verticalPosition(y0, v0, theta, t, g = 9.8) {
-        const v0y = v0 * Math.sin(theta);
-        return y0 + v0y * t - 0.5 * g * t * t;
+    static positionAtTime(s0, v0, a, t) {
+        return s0 + v0 * t + 0.5 * a * t * t;
     }
 }
 exports.MathEntity = MathEntity;
