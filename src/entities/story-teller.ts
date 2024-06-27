@@ -36,7 +36,7 @@ export class Storyteller extends FatherClass {
     }
     async SendMessage(message: string, id?: number) {
         let name = this.ChooseName()
-        await this.publicRoom.sendAnnouncement(`🎤${name}: ${message}`, id, hexadecimalColors.turquoise, WritingStyles.bold)
+        await this.publicRoom.sendAnnouncement(`🎤${name}: ${message}`, id, hexadecimalColors.turquoise, WritingStyles.bold, 0)
     }
     async SendMessageGoal(owngoal: boolean) {
         if (!owngoal) {

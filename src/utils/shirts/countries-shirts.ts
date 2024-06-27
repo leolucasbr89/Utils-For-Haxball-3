@@ -109,5 +109,15 @@ export const CountriesShirts: Team[] = [
         Vamo´ Uruguay, Uruguay, Uruguay`],
         color: hexadecimalColors.royalblue,
         shirt: {angle: 60, textColor:  0x000000, colors: [0x0D9EFF]}
+    },
+    {
+        name: "Belgium",
+        cheerphrases: [
+        `Belgien, Belgien, auf zum Sieg,
+        Unser Herz schlägt laut und stark!
+        Belgien, Belgien, unser Team,
+        Wir sind hier, für euch im Park!`],
+        color:  hexadecimalColors.yellow,
+        shirt: {angle: 0, textColor: 0xFFFB00, colors: [0xD62828]}
     }
 ]

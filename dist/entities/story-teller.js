@@ -47,7 +47,7 @@ class Storyteller extends father_js_1.FatherClass {
     SendMessage(message, id) {
         return __awaiter(this, void 0, void 0, function* () {
             let name = this.ChooseName();
-            yield this.publicRoom.sendAnnouncement(`🎤${name}: ${message}`, id, index_js_1.hexadecimalColors.turquoise, index_js_1.WritingStyles.bold);
+            yield this.publicRoom.sendAnnouncement(`🎤${name}: ${message}`, id, index_js_1.hexadecimalColors.turquoise, index_js_1.WritingStyles.bold, 0);
         });
     }
     SendMessageGoal(owngoal) {
