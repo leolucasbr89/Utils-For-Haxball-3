@@ -65,6 +65,7 @@ exports.shirts = {
     BrazilianShirts: brazilian_shirts_js_1.BrazilianShirts,
     SpanishShirts: spanish_shirts_1.SpanishShirts,
     CountriesShirts: countries_shirts_1.CountriesShirts,
+    Teams: [...brazilian_shirts_js_1.BrazilianShirts, ...spanish_shirts_1.SpanishShirts],
     AllUniforms: [...brazilian_shirts_js_1.BrazilianShirts, ...spanish_shirts_1.SpanishShirts, ...countries_shirts_1.CountriesShirts]
 };
 //# sourceMappingURL=vars.js.map

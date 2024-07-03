@@ -306,5 +306,29 @@ export const BrazilianShirts: Team[] = [
         Arrebenta coração`],
         color: hexadecimalColors.gray,
         shirt: {angle: 0,textColor: 0xFF0000, colors: [0xFAFAFA]}
+    }, 
+    {
+        name: "Cuiabá",
+        cheerphrases: [
+        `Cuiabá Esporte Clube, time do meu coração
+        Nasceste, predestinado para ser um grande campeão
+        Legítimo representante da cidade verde, da terra do sol
+        És guerreiro, és gigante, na arte do futebol
+        És guerreiro, és gigante, na arte do futebol
+        Auriverde da baixada
+        Suas cores lembram nossa tradição
+        E cada gol (gol) é uma jogada que ascende a chama da nossa paixão
+        E cada gol (gol) é uma jogada que ascende a chama da nossa paixão
+        Cuiabá, Cuiabá, Cuiabá
+        Tens a valentia de um dourado
+        Em campo nos faz vibrar
+        No gingado do rasqueado
+        Cuiabá, Cuiabá, Cuiabá
+        Tens a valentia de um dourado
+        Em campo nos faz vibrar
+        No gingado do rasqueado
+        Cuiabá Esporte Clube, este é o time do meu coração`],
+        color: hexadecimalColors.green,
+        shirt: {angle: 90, textColor: 0xFFFFFF, colors: [0xF8F23C, 0x06783C, 0xF8F23C]}
     }
 ]

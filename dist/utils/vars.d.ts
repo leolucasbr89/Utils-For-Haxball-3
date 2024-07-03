@@ -2333,5 +2333,6 @@ export declare const shirts: {
     BrazilianShirts: import("..").Team[];
     SpanishShirts: import("..").Team[];
     CountriesShirts: import("..").Team[];
+    Teams: import("..").Team[];
     AllUniforms: import("..").Team[];
 };

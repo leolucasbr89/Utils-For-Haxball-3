@@ -122,6 +122,103 @@ exports.CountriesShirts = [
         ],
         color: vars_1.hexadecimalColors.yellow,
         shirt: { angle: 0, textColor: 0xFFFB00, colors: [0xD62828] }
+    },
+    {
+        name: "Egypt",
+        cheerphrases: [
+            `Minha terra natal, Minha terra natal, Minha terra natal
+        Meu amor e meu coração são vossos
+        Egito! Ó mãe de todas as terras,
+        Tu és minha esperança e minha ambição,
+        Quem pode avaliar
+        as bênçãos do Nilo para a humanidade?
+        Egito! A jóia mais preciosa,
+        Brilhando pela eternidade!
+        Ó minha terra natal, sejas para sempre livre,
+        Livre de todos os inimigos!
+        Egito! Nobres são tuas crianças,
+        Fiéis, e guardiãs de teu solo.
+        Na guerra e na paz
+        Nós te damos nossas vidas.`
+        ],
+        shirt: { angle: 60, textColor: 0xFFFFFF, colors: [0xF70000] },
+        color: vars_1.hexadecimalColors.red
+    },
+    {
+        name: "Mexico",
+        cheerphrases: [
+            `Mexicanos, al grito de guerra
+        El acero aprestad y el bridón
+        Y retiemble en sus centros la tierra
+        Al sonoro rugir del cañón
+        Y retiemble en sus centros la tierra
+        Al sonoro rugir del cañón
+        Ciña ¡oh, Patria! Tus sienes de oliva
+        De la paz el arcángel divino
+        Que en el cielo tu eterno destino
+        Por el dedo de Dios se escribió
+        Mas si osare un extraño enemigo
+        Profanar con su planta tu suelo
+        Piensa, ¡oh, Patria querida! Que el cielo
+        Un soldado en cada hijo te dio
+        ¡Un soldado en cada hijo te dio!`
+        ],
+        color: vars_1.hexadecimalColors.green,
+        shirt: { angle: 0, textColor: 0xFFFFFF, colors: [0x094A02] }
+    },
+    {
+        name: "United States of America",
+        color: vars_1.hexadecimalColors.blueHax,
+        cheerphrases: [
+            `I
+        I believe
+        I believe that
+        I believe that we
+        I believe that we will
+        I believe that we will win!
+        I believe that we will win!
+        I believe that we will win!`
+        ],
+        shirt: { angle: -40, textColor: 0xFFFFFF, colors: [0x001347, 0xFF1C1C, 0x001347] }
+    },
+    {
+        name: "Morocco",
+        color: vars_1.hexadecimalColors.red,
+        cheerphrases: [
+            `Allez, allez, Maroc,
+        Les Lions de l'Atlas, on y croit,
+        Avec courage et avec foi,
+        On va gagner, on va gagner!
+        Maroc, oh Maroc,
+        Fiers et forts, on est avec vous,
+        Rouge et vert, notre cœur bat pour vous,
+        Ensemble, on va triompher!
+        Oh-oh-oh-oh, allez les Lions,
+        Oh-oh-oh-oh, jusqu'au bout,
+        Avec fierté, on va chanter,
+        Pour la victoire, pour le Maroc!`
+        ],
+        shirt: { angle: 0, textColor: 0x017b5b, colors: [0xDB0000] }
+    },
+    {
+        name: "Portugal",
+        color: vars_1.hexadecimalColors.red,
+        cheerphrases: [
+            `Vá lá cambada
+        Infantes desportistas
+        Homens de conquistas
+        Povo que és o meu
+        Bola redonda e onze jogadores
+        Em frente sem temores
+        Que as tácticas dou eu
+        Tragam as gaitas, as bandeiras e a pomada
+        Vamos dar-lhes uma abada
+        Ensinar-lhes o que é bom
+        Vamos mostrar a esses carafunchosos
+        Por momentos gloriosos
+        Quem é a nossa selecção`
+        ],
+        shirt: { angle: -45, textColor: 0xFFF700, colors: [0x165200, 0xC20808] }
     }
 ];
 //# sourceMappingURL=countries-shirts.js.map

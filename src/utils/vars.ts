@@ -73,5 +73,6 @@ export const shirts = {
     BrazilianShirts,
     SpanishShirts,
     CountriesShirts,
+    Teams: [...BrazilianShirts, ...SpanishShirts],
     AllUniforms: [...BrazilianShirts, ...SpanishShirts, ...CountriesShirts]
 }
