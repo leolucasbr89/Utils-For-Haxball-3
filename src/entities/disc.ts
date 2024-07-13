@@ -3,8 +3,10 @@ import { FatherClass } from "./father.js";
 
 
 export class Disc extends FatherClass {
-    constructor(publicRoom: RoomObject,readonly id: number, readonly position: Position) {
+    position: Position
+    constructor(publicRoom: RoomObject,readonly id: number, position: Position) {
         super(publicRoom)
+        this.position = position
         
     }
     //this metod is util for real soccer
@@ -20,5 +22,8 @@ export class Disc extends FatherClass {
     }
     async ChangeBallColor(color: number) {
         await this.publicRoom.setDiscProperties(this.id, {color: color})
+    }
+    async UpdatePosition(position: Position) {
+        this.position = position
     }
 }
