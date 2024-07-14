@@ -1,6 +1,5 @@
-/// <reference types="haxball-headless-browser" />
 import { FatherClass } from "./father.js";
-import { idioms } from "../types/types.js";
+import { idioms, RoomObject } from "../types/types.js";
 export declare class Storyteller extends FatherClass {
     private GoalMessages;
     private OwnGoalMessages;

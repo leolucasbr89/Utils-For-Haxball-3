@@ -37,6 +37,11 @@ class Disc extends father_js_1.FatherClass {
             yield this.publicRoom.setDiscProperties(this.id, { color: color });
         });
     }
+    UpdatePosition(position) {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.position = position;
+        });
+    }
 }
 exports.Disc = Disc;
 //# sourceMappingURL=disc.js.map

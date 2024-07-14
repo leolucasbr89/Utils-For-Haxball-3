@@ -1,7 +1,7 @@
 import { FatherClass } from "./father.js";
 import { MathEntity } from "./math.entity.js";
 import { WritingStyles, hexadecimalColors, messages} from "../index.js";
-import { idioms } from "../types/types.js";
+import { idioms, RoomObject } from "../types/types.js";
 
 
 export class Storyteller extends FatherClass {

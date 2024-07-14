@@ -1,6 +1,5 @@
-/// <reference types="haxball-headless-browser" />
 import { FatherClass } from "./father.js";
-import { idioms } from "../index.js";
+import { PlayerObject, RoomObject, idioms } from "../index.js";
 export declare class Referee extends FatherClass {
     referename: string;
     constructor(publicRoom: RoomObject, idiom: idioms);

@@ -1,4 +1,4 @@
-import { Position } from "../types/types.js";
+import { Position, RoomObject } from "../types/types.js";
 import { FatherClass } from "./father.js";
 
 

@@ -1,5 +1,5 @@
 import { FatherClass } from "./father.js";
-import { WritingStyles, hexadecimalColors, idioms } from "../index.js"
+import { PlayerObject, RoomObject, WritingStyles, hexadecimalColors, idioms } from "../index.js"
 
 export class Referee extends FatherClass {
     referename: string = "Referee"

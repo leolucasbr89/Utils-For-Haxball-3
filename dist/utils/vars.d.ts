@@ -484,704 +484,92 @@ export declare const maps: {
         name: string;
         width: number;
         height: number;
-        spawnDistance: number;
         bg: {
             type: string;
-            height: number;
             width: number;
-            color: string;
+            height: number;
+            kickOffRadius: number;
         };
-        canBeStored: boolean;
         vertexes: ({
             x: number;
             y: number;
-            trait: string;
-            color: string;
-            _data?: undefined;
-            pos?: undefined;
+            cMask: string[];
             bCoef?: undefined;
-            cMask?: undefined;
             cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            trait: string;
-            color: string;
-            _data: {
-                mirror: {};
-            };
-            pos?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            trait: string;
-            pos: number[];
-            color: string;
-            _data?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
         } | {
             x: number;
             y: number;
             bCoef: number;
             cMask: string[];
-            trait: string;
-            color: string;
-            _data?: undefined;
-            pos?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
+            cGroup: string[];
         } | {
             x: number;
             y: number;
             bCoef: number;
             cMask: string[];
-            trait: string;
-            pos: number[];
-            color: string;
-            _data?: undefined;
             cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            cGroup: string[];
-            color: string;
-            vis: boolean;
-            trait?: undefined;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            cGroup: string[];
-            curve: number;
-            color: string;
-            _data: {
-                mirror: {};
-            };
-            trait?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            vis?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            trait: string;
-            curve: number;
-            color: string;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            trait: string;
-            bias: number;
-            color?: undefined;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-        } | {
-            x: number;
-            y: number;
-            trait: string;
-            bias: number;
-            color: string;
-            _data: {
-                mirror: {};
-            };
-            pos?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-        } | {
-            x: number;
-            y: number;
-            trait: string;
-            pos: number[];
-            bias: number;
-            color?: undefined;
-            _data?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-        } | {
-            x: number;
-            y: number;
-            bCoef: number;
-            cMask: string[];
-            trait: string;
-            bias: number;
-            color?: undefined;
-            _data?: undefined;
-            pos?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            trait: string;
-            vis: boolean;
-            color: string;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            trait: string;
-            color: string;
-            curve: number;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            bCoef: number;
-            cMask: string[];
-            trait: string;
-            color: string;
-            vis: boolean;
-            curve: number;
-            _data?: undefined;
-            pos?: undefined;
-            cGroup?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            bCoef: number;
-            cMask: string[];
-            trait: string;
-            color: string;
-            _data: {
-                mirror: {};
-            };
-            pos?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            bCoef: number;
-            cMask: string[];
-            trait: string;
-            curve: number;
-            color: string;
-            _data?: undefined;
-            pos?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            cGroup: string[];
-            curve: number;
-            color: string;
-            trait?: undefined;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            vis?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            cGroup: string[];
-            trait?: undefined;
-            color?: undefined;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            cGroup: string[];
-            color: string;
-            trait?: undefined;
-            _data?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            vis?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            cMask: string[];
-            cGroup: string[];
-            color: string;
-            vis: boolean;
-            _data: {
-                mirror: {};
-            };
-            trait?: undefined;
-            pos?: undefined;
-            bCoef?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-        } | {
-            x: number;
-            y: number;
-            trait: string;
-            color: string;
-            _data: {
-                mirror: {};
-            };
-            curve: number;
-            pos?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            vis?: undefined;
-            bias?: undefined;
         })[];
         segments: ({
             v0: number;
             v1: number;
-            color: string;
-            trait: string;
-            x: number;
-            bCoef?: undefined;
-            cMask?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            color: string;
             bCoef: number;
             cMask: string[];
-            trait: string;
-            y: number;
-            x?: undefined;
+            color: string;
+            vis?: undefined;
             cGroup?: undefined;
             curve?: undefined;
-            _data?: undefined;
-            bias?: undefined;
+            curveF?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            bCoef: number;
+            vis: boolean;
+            cMask: string[];
+            cGroup: string[];
+            color?: undefined;
+            curve?: undefined;
+            curveF?: undefined;
+        } | {
+            v0: number;
+            v1: number;
+            bCoef: number;
+            curve: number;
+            curveF: number;
+            cMask: string[];
+            cGroup: string[];
+            color: string;
             vis?: undefined;
         } | {
             v0: number;
             v1: number;
-            color: string;
             bCoef: number;
             cMask: string[];
-            trait: string;
-            x: number;
-            y?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            color: string;
-            cMask: string[];
             cGroup: string[];
-            x: number;
-            trait?: undefined;
-            bCoef?: undefined;
-            y?: undefined;
+            color: string;
+            vis?: undefined;
             curve?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            cMask: string[];
-            cGroup: string[];
-            x: number;
-            _data: {
-                mirror: {};
-                arc: {
-                    a: number[];
-                    b: number[];
-                    curve: number;
-                    radius: number;
-                    center: number[];
-                    from: number;
-                    to: number;
-                };
-            };
-            trait?: undefined;
-            bCoef?: undefined;
-            y?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            cMask: string[];
-            cGroup: string[];
-            x: number;
-            trait?: undefined;
-            bCoef?: undefined;
-            y?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            trait: string;
-            y: number;
-            x?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            color: string;
-            trait: string;
-            bias: number;
-            x: number;
-            bCoef?: undefined;
-            cMask?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            color: string;
-            trait: string;
-            bias: number;
-            y: number;
-            _data: {
-                mirror: {};
-                arc: {
-                    a: number[];
-                    b: number[];
-                    radius: null;
-                    center: null[];
-                    from: null;
-                    to: null;
-                    curve?: undefined;
-                };
-            };
-            x?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            vis?: undefined;
+            curveF?: undefined;
         } | {
             v0: number;
             v1: number;
             vis: boolean;
-            color: string;
             cMask: string[];
-            cGroup: string[];
-            x: number;
-            trait?: undefined;
+            color: string;
             bCoef?: undefined;
-            y?: undefined;
+            cGroup?: undefined;
             curve?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            trait: string;
-            x: number;
+            curveF?: undefined;
+        })[];
+        planes: ({
+            normal: number[];
+            dist: number;
+            cMask: string[];
             bCoef?: undefined;
-            cMask?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
         } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            trait: string;
-            x?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
+            normal: number[];
+            dist: number;
             bCoef: number;
-            trait: string;
-            bias: number;
-            y: number;
-            color?: undefined;
-            x?: undefined;
             cMask?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            bCoef: number;
-            trait: string;
-            bias: number;
-            x: number;
-            color?: undefined;
-            cMask?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            trait: string;
-            bias: number;
-            y: number;
-            color?: undefined;
-            x?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            trait: string;
-            bias: number;
-            x: number;
-            color?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            trait: string;
-            y: number;
-            x: number;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            cMask: string[];
-            cGroup: string[];
-            trait: string;
-            x?: undefined;
-            bCoef?: undefined;
-            y?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            bCoef: number;
-            cMask: string[];
-            trait: string;
-            x?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            bCoef: number;
-            cMask: string[];
-            trait: string;
-            _data: {
-                mirror: {};
-                arc: {
-                    a: number[];
-                    b: number[];
-                    curve: number;
-                    radius: number;
-                    center: number[];
-                    from: number;
-                    to: number;
-                };
-            };
-            x?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            color: string;
-            bCoef: number;
-            cMask: string[];
-            trait: string;
-            x?: undefined;
-            y?: undefined;
-            cGroup?: undefined;
-            curve?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            curve: number;
-            color: string;
-            cMask: string[];
-            cGroup: string[];
-            trait?: undefined;
-            x?: undefined;
-            bCoef?: undefined;
-            y?: undefined;
-            _data?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            color: string;
-            cMask: string[];
-            cGroup: string[];
-            x: number;
-            _data: {
-                mirror: {};
-                arc: {
-                    a: number[];
-                    b: number[];
-                    radius: null;
-                    center: null[];
-                    from: null;
-                    to: null;
-                    curve?: undefined;
-                };
-            };
-            trait?: undefined;
-            bCoef?: undefined;
-            y?: undefined;
-            curve?: undefined;
-            bias?: undefined;
-            vis?: undefined;
-        } | {
-            v0: number;
-            v1: number;
-            color: string;
-            trait: string;
-            y: number;
-            curve: number;
-            _data: {
-                mirror: {};
-                arc: {
-                    a: number[];
-                    b: number[];
-                    curve: number;
-                    radius?: undefined;
-                    center?: undefined;
-                    from?: undefined;
-                    to?: undefined;
-                };
-            };
-            x?: undefined;
-            bCoef?: undefined;
-            cMask?: undefined;
-            cGroup?: undefined;
-            bias?: undefined;
-            vis?: undefined;
         })[];
         goals: {
             p0: number[];
@@ -1190,104 +578,26 @@ export declare const maps: {
         }[];
         discs: ({
             radius: number;
-            invMass: number;
-            pos: number[];
-            color: string;
             bCoef: number;
-            cGroup: string[];
-            trait?: undefined;
-        } | {
-            radius: number;
-            pos: number[];
-            trait: string;
-            invMass?: undefined;
-            color?: undefined;
-            bCoef?: undefined;
-            cGroup?: undefined;
-        } | {
-            pos: number[];
+            invMass: number;
             color: string;
-            trait: string;
-            radius?: undefined;
-            invMass?: undefined;
+            cGroup: string[];
+            pos?: undefined;
+        } | {
+            pos: number[];
+            radius: number;
+            invMass: number;
+            color: string;
             bCoef?: undefined;
             cGroup?: undefined;
         })[];
-        planes: {
-            normal: number[];
-            dist: number;
-            cMask: string[];
-            color: string;
-            _data: {
-                extremes: {
-                    normal: number[];
-                    dist: number;
-                    canvas_rect: number[];
-                    a: number[];
-                    b: number[];
-                };
-            };
-        }[];
-        traits: {
-            rede: {
-                vis: boolean;
-                bCoef: number;
-                cMask: string[];
-                color: string;
-            };
-            rede2: {
-                vis: boolean;
-                bCoef: number;
-                cMask: string[];
-                color: string;
-            };
-            parede: {
-                vis: boolean;
-                bCoef: number;
-                cMask: string[];
-                bias: number;
-            };
-            traveRed: {
-                radius: number;
-                invMass: number;
-                bCoef: number;
-                color: string;
-            };
-            traveBlue: {
-                radius: number;
-                invMass: number;
-                bCoef: number;
-                color: string;
-            };
-            bandeiraRed: {
-                radius: number;
-                color: string;
-                cMask: string[];
-            };
-            bandeiraBlue: {
-                radius: number;
-                color: string;
-                cMask: string[];
-            };
-            linha: {
-                cMask: string[];
-                color: string;
-            };
-            hb: {
-                cMask: string[];
-                color: string;
-            };
-        };
-        ballPhysics: string;
         playerPhysics: {
             bCoef: number;
             acceleration: number;
             kickingAcceleration: number;
-            kickStrength: number;
         };
-        joints: never[];
-        redSpawnPoints: never[];
-        blueSpawnPoints: never[];
+        ballPhysics: string;
+        spawnDistance: number;
     };
     x7futsal: {
         name: string;
