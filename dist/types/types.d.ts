@@ -14,6 +14,7 @@ export type Team = {
     color: number;
     region?: string;
 };
+export declare function HBInit(roomConfig: RoomConfigObject): RoomObject;
 export interface RoomConfigObject {
     roomName?: string;
     playerName?: string;

@@ -12,7 +12,7 @@ export type Team =  {
 }
 
 
-declare function HBInit(roomConfig: RoomConfigObject): RoomObject;
+export declare function HBInit(roomConfig: RoomConfigObject): RoomObject;
 
 export interface RoomConfigObject {
     roomName?: string;
