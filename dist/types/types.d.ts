@@ -133,3 +133,6 @@ export type CollisionFlagsObject = {
     "c3": -2147483648;
     "c4": number;
 };
+export interface EventInterface {
+    Event(...args: any[]): Promise<any>;
+}
