@@ -128,4 +128,7 @@ export type CollisionFlagsObject = {
 }
 
 
+export interface EventInterface {
+    Event(...args: any[]): Promise<any>;
+}
 
