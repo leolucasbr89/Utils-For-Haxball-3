@@ -90,6 +90,8 @@ export interface PlayerObject {
     team: TeamID;
     admin: boolean;
     position: Position;
+}
+export interface PlayerObjectOnJoin extends PlayerObject {
     conn: string;
     auth: string;
 }

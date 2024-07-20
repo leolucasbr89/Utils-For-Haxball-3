@@ -81,12 +81,18 @@ export interface RoomConfigObject {
     onTeamsLockChange(boolean: boolean, player: PlayerObject): void
 }
 
+
+
 export interface PlayerObject {
     id: number;
     name: string;
     team: TeamID;
     admin: boolean;
     position: Position;
+    
+}
+
+export interface PlayerObjectOnJoin  extends PlayerObject {
     conn: string;
     auth: string;
 }
