@@ -76,3 +76,7 @@ export const shirts = {
     Teams: [...BrazilianShirts, ...SpanishShirts],
     AllUniforms: [...BrazilianShirts, ...SpanishShirts, ...CountriesShirts]
 }
+
+export const ProhibitedWordsInPortuguese = ["arrombado", "tmnc", "cu", "macaco", "hitler", "fodase", "fdp", "puta",
+    "verme", "vermes", "macacos", "arrombados", "putas", "sexo", "lixo", "horrível", "horrivel"
+]

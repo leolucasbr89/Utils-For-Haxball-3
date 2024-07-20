@@ -1646,3 +1646,4 @@ export declare const shirts: {
     Teams: import("..").Team[];
     AllUniforms: import("..").Team[];
 };
+export declare const ProhibitedWordsInPortuguese: string[];

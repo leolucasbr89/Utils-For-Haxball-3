@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.shirts = exports.WritingStyles = exports.messages = exports.maps = exports.hexadecimalColors = void 0;
+exports.ProhibitedWordsInPortuguese = exports.shirts = exports.WritingStyles = exports.messages = exports.maps = exports.hexadecimalColors = void 0;
 const x3_futsal_json_1 = __importDefault(require("../../maps/x3-futsal.json"));
 const es_message_json_1 = __importDefault(require("../../i18n/es.message.json"));
 const pt_message_json_1 = __importDefault(require("../../i18n/pt.message.json"));
@@ -68,4 +68,7 @@ exports.shirts = {
     Teams: [...brazilian_shirts_js_1.BrazilianShirts, ...spanish_shirts_1.SpanishShirts],
     AllUniforms: [...brazilian_shirts_js_1.BrazilianShirts, ...spanish_shirts_1.SpanishShirts, ...countries_shirts_1.CountriesShirts]
 };
+exports.ProhibitedWordsInPortuguese = ["arrombado", "tmnc", "cu", "macaco", "hitler", "fodase", "fdp", "puta",
+    "verme", "vermes", "macacos", "arrombados", "putas", "sexo", "lixo", "horrível", "horrivel"
+];
 //# sourceMappingURL=vars.js.map
