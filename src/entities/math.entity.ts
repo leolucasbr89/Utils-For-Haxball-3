@@ -18,5 +18,18 @@ export class MathEntity {
     static calculateProportion(knownValue: number, knownValueEquivalent: number, unknownValueEquivalent: number) {
         let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
         return unknownValue
-    }    
+    }
+    static  calculateAngle(x1: number, y1: number, x2: number, y2: number): number {
+        
+        const deltaX = x2 - x1;
+        const deltaY = y2 - y1;
+    
+        
+        const angleRad = Math.atan2(deltaY, deltaX);
+    
+        const angleDeg = angleRad * (180 / Math.PI);
+    
+        return angleDeg;
+    }
+        
 }

@@ -18,6 +18,13 @@ class MathEntity {
         let unknownValue = (knownValue * unknownValueEquivalent) / knownValueEquivalent;
         return unknownValue;
     }
+    static calculateAngle(x1, y1, x2, y2) {
+        const deltaX = x2 - x1;
+        const deltaY = y2 - y1;
+        const angleRad = Math.atan2(deltaY, deltaX);
+        const angleDeg = angleRad * (180 / Math.PI);
+        return angleDeg;
+    }
 }
 exports.MathEntity = MathEntity;
 //# sourceMappingURL=math.entity.js.map
