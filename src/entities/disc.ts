@@ -26,4 +26,7 @@ export class Disc extends FatherClass {
     async UpdatePosition(position: Position) {
         this.position = position
     }
+    async ChangeGravity(newygravity: number, newxgravity: number) {
+        await this.publicRoom.setDiscProperties(this.id, {ygravity: newygravity, xgravity: newxgravity})
+    }
 }

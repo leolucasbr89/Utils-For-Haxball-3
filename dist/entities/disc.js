@@ -42,6 +42,11 @@ class Disc extends father_js_1.FatherClass {
             this.position = position;
         });
     }
+    ChangeGravity(newygravity, newxgravity) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.publicRoom.setDiscProperties(this.id, { ygravity: newygravity, xgravity: newxgravity });
+        });
+    }
 }
 exports.Disc = Disc;
 //# sourceMappingURL=disc.js.map

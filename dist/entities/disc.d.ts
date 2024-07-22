@@ -8,4 +8,5 @@ export declare class Disc extends FatherClass {
     ChangeBallForce(newInvMass: number): Promise<void>;
     ChangeBallColor(color: number): Promise<void>;
     UpdatePosition(position: Position): Promise<void>;
+    ChangeGravity(newygravity: number, newxgravity: number): Promise<void>;
 }
