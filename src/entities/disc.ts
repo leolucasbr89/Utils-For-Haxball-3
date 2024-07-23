@@ -12,8 +12,8 @@ export class Disc extends FatherClass {
         
     }
     //this metod is util for real soccer
-    async ChangeBallPosition(x: number, cmask?: number, y?: number) {
-        await this.publicRoom.setDiscProperties(this.id, {x: x, y:y, cMask: cmask, xspeed: 0, yspeed: 0})
+    async ChangeBallPosition(x: number|undefined,  y: number|undefined) {
+        await this.publicRoom.setDiscProperties(this.id, {x: x, y:y,  xspeed: 0, yspeed: 0})
     }
     async ChangeBallForce(newInvMass: number) {
         await this.publicRoom.setDiscProperties(this.id, {invMass: newInvMass})
@@ -26,5 +26,11 @@ export class Disc extends FatherClass {
     }
     async ChangeGravity(newygravity: number, newxgravity: number) {
         await this.publicRoom.setDiscProperties(this.id, {ygravity: newygravity, xgravity: newxgravity})
+    }
+    async ChanceCMask(cmask: number) {
+        await this.publicRoom.setDiscProperties(this.id, {cMask: cmask})
+    }
+    async ChangeRadius(radius: number) {
+        await this.publicRoom.setDiscProperties(this.id, {radius: radius})
     }
 }
