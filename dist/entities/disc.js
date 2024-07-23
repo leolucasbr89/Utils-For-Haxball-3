@@ -16,15 +16,12 @@ class Disc extends father_js_1.FatherClass {
         super(publicRoom);
         this.id = id;
         this.position = position;
+        this.InvMass = this.publicRoom.getDiscProperties(id).invMass;
     }
     //this metod is util for real soccer
     ChangeBallPosition(x, cmask, y) {
         return __awaiter(this, void 0, void 0, function* () {
-            this.position.x = x;
-            if (y) {
-                this.position.y = y;
-            }
-            yield this.publicRoom.setDiscProperties(this.id, { x: x, y: y, cMask: cmask });
+            yield this.publicRoom.setDiscProperties(this.id, { x: x, y: y, cMask: cmask, xspeed: 0, yspeed: 0 });
         });
     }
     ChangeBallForce(newInvMass) {
