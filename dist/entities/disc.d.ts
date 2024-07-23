@@ -5,7 +5,7 @@ export declare class Disc extends FatherClass {
     position: Position;
     InvMass: number | undefined;
     constructor(publicRoom: RoomObject, id: number, position: Position);
-    ChangeBallPosition(x: number | undefined, y: number | undefined): Promise<void>;
+    ChangeBallPosition(x: number, y: number): Promise<void>;
     ChangeBallForce(newInvMass: number): Promise<void>;
     ChangeBallColor(color: number): Promise<void>;
     UpdatePosition(position: Position): Promise<void>;
