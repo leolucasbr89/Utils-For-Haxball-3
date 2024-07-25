@@ -21,7 +21,7 @@ class Disc extends father_js_1.FatherClass {
     //this metod is util for real soccer
     ChangeBallPosition(x, y) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.publicRoom.setDiscProperties(this.id, { x: x, y: y, xspeed: 0, yspeed: 0 });
+            yield this.publicRoom.setDiscProperties(this.id, { x: x, y: y, xspeed: 0, yspeed: 0, ygravity: 0, xgravity: 0 });
         });
     }
     ChangeBallForce(newInvMass) {

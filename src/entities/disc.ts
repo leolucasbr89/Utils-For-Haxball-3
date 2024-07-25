@@ -13,7 +13,7 @@ export class Disc extends FatherClass {
     }
     //this metod is util for real soccer
     async ChangeBallPosition(x: number,  y: number) {
-        await this.publicRoom.setDiscProperties(this.id, {x: x, y:y,  xspeed: 0, yspeed: 0})
+        await this.publicRoom.setDiscProperties(this.id, {x: x, y:y,  xspeed: 0, yspeed: 0, ygravity: 0, xgravity: 0})
     }
     async ChangeBallForce(newInvMass: number) {
         await this.publicRoom.setDiscProperties(this.id, {invMass: newInvMass})
