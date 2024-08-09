@@ -64,7 +64,7 @@ export interface RoomConfigObject {
     onTeamVictory(scores: ScoresObject): void;
     onPlayerChat(player: PlayerObject, msg: string): any;
     onPlayerBallKick(player: PlayerObject): void;
-    onTeamGoal(team: TeamID): void;
+    onTeamGoal(team: ActiveTeams): void;
     onGameStart(byPlayer: PlayerObject): void;
     onGameStop(byPlayer: PlayerObject): void;
     onPlayerAdminChange(changedPlayer: PlayerObject, byPlayer: PlayerObject): void;
