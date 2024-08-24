@@ -6,3 +6,4 @@ export * from "./entities/math.entity.js";
 export * from "./utils/functions.js";
 export * from "./utils/vars.js";
 export * from "./entities/disc.js";
+export * from "./entities/Configure-teams.js";

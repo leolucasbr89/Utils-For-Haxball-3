@@ -138,3 +138,12 @@ export type CollisionFlagsObject = {
 export interface EventInterface {
     Event(...args: any[]): Promise<any>;
 }
+export interface ReturnChooseShirt {
+    team1: Team;
+    team2: Team;
+}
+export interface Teams {
+    team1: Team;
+    team2: Team;
+}
+export type InputModes = "BR" | "ES" | "UNI" | "CO" | "TEAM";
